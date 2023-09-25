@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillUpConnect</title>
+    <link rel="icon" href="skiii.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Add this line to link your external CSS file -->
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="skiii.png" alt="Your Logo">
+        <h1 class="header-title">SkillUpConnect</h1>
+        
+    </div>
+    <h2>Domains</h2>
+    <p>Coming to the Domains as said</p>
+    <h3>Web Development<br>Data Science<br>Python</h3><br>
+    <hr class="full-width-hr"><br>
+    <h3>Topics Of Web Development</h3>
+    <p>HTML<br>
+    CSS<br>
+    JS<br>
+    Responsive Web Design<br>
+    Deploying a Website<br>
+    Web Security<br><br></p>
+    <hr class="full-width-hr"><br>
+    <h3>Topics Of Data Science</h3>
+    <p>Data Collection and Data Cleaning<br>
+Exploratory Data Analysis (EDA)<br>
+Data Visualization<br>
+Statistical Analysis<br>
+Machine Learning<br>
+AI vs ML<br><br></p>
+<hr class="full-width-hr"><br>
+<h3>Topics Of Python</h3>
+<p>Basic python Syntax<br>
+    Data Structures<br>
+    Functions<br>
+    OOP<br>
+    Web Dev Using Python
+</p>
+<a href="https://www.linkedin.com/in/skillup-connect-276177293/" class="register-button" target="_blank">Register</a><br><br>
+<hr class="full-width-hr">
+
+
+<div class="container">
+    <p>Dear Interns,
+        All The Best for Your Journey in SkillUpConnect</p></div>
+        <!-- Rating Section -->
+<div class="rating">
+<h3>Rate Us</h3>
+<div class="stars" id="stars">
+<span class="star" data-value="1">☆</span>
+<span class="star" data-value="2">☆</span>
+<span class="star" data-value="3">☆</span>
+<span class="star" data-value="4">☆</span>
+<span class="star" data-value="5">☆</span>
+</div>
+<p>Thank you for using SkillUpConnect! Please rate your experience.</p>
+</div>
+<!-- JavaScript for Rating -->
+<script>
+const stars = document.querySelectorAll('.star');
+const starsContainer = document.getElementById('stars');
+
+stars.forEach((star) => {
+star.addEventListener('click', () => {
+const rating = star.getAttribute('data-value');
+alert(`You rated us ${rating} star(s)! Thank you for your feedback.`);
+// You can send this rating data to your server for analysis if needed.
+
+// Change the color of the clicked star to red
+stars.forEach((s) => s.classList.remove('selected'));
+star.classList.add('selected');
+});
+});
+</script>
+    
+<!-- Footer with Copyright Information -->
+<footer>
+<p style="color: red;">&copy; 2023 SkillUpConnect. All rights reserved.</p>
+</footer>
+<marquee behavior="scroll" direction="side" scrollamount="3">
+Empowering dreams through skills and opportunities at SkillUpConnect
+</marquee>
+
+</div>

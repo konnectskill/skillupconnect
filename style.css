@@ -1,0 +1,172 @@
+
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Jost', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center; /* Vertically center the content */
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        .logo {
+            width: 70px; /* Adjust the width as needed */
+            margin-right: 20px;
+        }
+
+        h1.header-title {
+            color: red;
+            font-family: 'Poppins', sans-serif;
+            margin: 0; /* Remove default margin for the h1 */
+        }
+
+        h2 {
+            color: red;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        h3 {
+            color: red;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+        
+
+        .nav {
+            margin-left: auto; /* Push the navigation links to the right */
+        }
+
+        .nav a {
+            color: red; /* Set the link color to red */
+            text-decoration: none;
+            margin: 0 10px; /* Add spacing between the links */
+        }
+
+        .message {
+            color: red; /* Set the message color to red */
+            margin-top: 20px; /* Add some top margin to separate it from the header */
+        }
+
+        /* Banner styles */
+        .banner {
+            background-image: url('your-banner-image.jpg'); /* Replace with your banner image URL */
+            background-size: cover;
+            background-position: center;
+            height: 300px; /* Adjust the height as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background color for the container */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container h1 {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Add this CSS rule to make icons red */
+        .icons a {
+            display: inline-block;
+            margin-right: 10px; /* Add spacing between icons if needed */
+        }
+        /* CSS for the Selected (Red) Star */
+/* CSS for the Selected (Red) Star */
+.selected {
+    color: red;
+    animation: bounce 0.5s ease;
+}
+
+/* Add a hand cursor when hovering over stars */
+.star {
+    cursor: pointer;
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+/* Style for a Full-Width Horizontal Line */
+.full-width-hr {
+    border-color: red;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.icon-container {
+    position: relative;
+}
+
+.service-name {
+    position: absolute;
+    bottom: -30px; /* Adjust this value to control the placement of the text */
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    margin: 0;
+    opacity: 0; /* Initially hide the text */
+    pointer-events: none; /* Allow clicks to pass through to the image */
+    transition: opacity 0.3s;
+}
+
+.icon-container:hover .service-name {
+    opacity: 1; /* Show the text on hover */
+}
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Add spacing between each icon */
+}
+
+.icon-container img {
+    width: 24px; /* Adjust the icon size as needed */
+    margin-bottom: 5px; /* Add spacing between the icon and text */
+}
+
+.icon-container p {
+    margin: 0;
+    color: white;
+}
+.icons a img {
+    filter: invert(1); /* Invert the color to white */
+}
+.register-button {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
