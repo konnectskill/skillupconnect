@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillUpConnect</title>
+    <link rel="icon" href="skiii.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,700&family=Poppins:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Add this line to link your external CSS file -->
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="skiii.png" alt="Your Logo">
+        <h1 class="header-title">SkillUpConnect</h1>
+    </div>
+    <h2>Process Of Our Company</h2>
+    <p>Connect Us Through linked in</p>
+    <img src="https://i.pinimg.com/originals/ec/4f/5f/ec4f5f25e85f2e3ce8161f6031aebf80.gif" width="350px" alt="connect Us"><br>
+    <p>Complete Internship In Our Company</p>
+    <img src="https://i.pinimg.com/originals/09/3f/18/093f1861fc92b3a0ba497ece177b27e6.gif" width="350px" alt="connect Us"><br>
+    <p>After The Internship We Provide You Internship Completion Certificate</p>
+    <img src="https://cdn.dribbble.com/users/7421625/screenshots/19193172/media/02fae889dbcce29d1519c8523a859be8.gif" width="350px" height="300px" alt="connect Us"><br>
+
+    <div class="container">
+        <p>Dear Interns,
+            All The Best for Your Journey in SkillUpConnect</p></div>
+            <!-- Rating Section -->
+    <div class="rating">
+    <h3>Rate Us</h3>
+    <div class="stars" id="stars">
+    <span class="star" data-value="1">☆</span>
+    <span class="star" data-value="2">☆</span>
+    <span class="star" data-value="3">☆</span>
+    <span class="star" data-value="4">☆</span>
+    <span class="star" data-value="5">☆</span>
+    </div>
+    <p>Thank you for using SkillUpConnect! Please rate your experience.</p>
+    </div>
+    <!-- JavaScript for Rating -->
+    <script>
+    const stars = document.querySelectorAll('.star');
+    const starsContainer = document.getElementById('stars');
+    
+    stars.forEach((star) => {
+    star.addEventListener('click', () => {
+    const rating = star.getAttribute('data-value');
+    alert(`You rated us ${rating} star(s)! Thank you for your feedback.`);
+    // You can send this rating data to your server for analysis if needed.
+    
+    // Change the color of the clicked star to red
+    stars.forEach((s) => s.classList.remove('selected'));
+    star.classList.add('selected');
+    });
+    });
+    </script>
+        
+    <!-- Footer with Copyright Information -->
+    <footer>
+    <p style="color: red;">&copy; 2023 SkillUpConnect. All rights reserved.</p>
+    </footer>
+    <marquee behavior="scroll" direction="side" scrollamount="3">
+    Empowering dreams through skills and opportunities at SkillUpConnect
+    </marquee>
+    
+    </div>
